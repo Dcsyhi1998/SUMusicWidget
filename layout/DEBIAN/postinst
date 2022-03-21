@@ -1,0 +1,3 @@
+#!/bin/bash
+
+chown mobile:mobile /Library/Airaw/Widgets/Controls/SUMusicWidget.bundle

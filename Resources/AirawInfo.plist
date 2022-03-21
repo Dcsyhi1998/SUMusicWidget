@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--  作成者名　-->
+	<key>Author</key>
+	<string>sugiuta</string>
+	<!--  幅のデフォルトのサイズ -->
+	<key>width</key>
+	<string>120</string>
+	<!--  高さのデフォルトのサイズ -->
+	<key>height</key>
+	<string>120</string>
+</dict>
+</plist>
