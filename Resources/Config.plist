@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<!-- 透明アイコン -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Color customization</string>
+			<key>footerText</key>
+			<string>This setting is used to acquire an image of the playback song and select whether the average color is darker or lighter.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+            <string>PSSegmentCell</string>
+			<key>cellClass</key>
+			<string>AirawSegmentTableCell</string>
+			<key>default</key>
+            <integer>2</integer>
+			<key>defaults</key>
+            <string>com.sugiuta.sumusicwidget</string>
+            <key>key</key>
+            <string>kColorType</string>
+            <key>validValues</key>
+            <array>
+                <integer>0</integer>
+                <integer>1</integer>
+                <integer>2</integer>
+            </array>
+            <key>validTitles</key>
+            <array>
+                <string>bright</string>
+                <string>darkish</string>
+                <string>default</string>
+            </array>
+		</dict>
+	</array>
+	<key>title</key>
+	<string></string>
+</dict>
+</plist>

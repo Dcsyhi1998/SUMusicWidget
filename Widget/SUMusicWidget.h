@@ -1,6 +1,7 @@
+#import <rootless.h>
 #import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
 #import <objc/runtime.h>
+#import <Foundation/Foundation.h>
 #import <MediaRemote/MediaRemote.h>
 #import "Classes/SUWindow.h"
 #import "Classes/SUBackgroundView.h"
@@ -15,7 +16,6 @@
  * It is required for control on the Airaw side.
  * Please be careful not to delete it.^^;
  */
-
 @protocol AirawControlProtocol
 @required
     @property (nonatomic, retain) NSString *identifier;
@@ -27,8 +27,7 @@
     @property (nonatomic, retain) NSString *identifier;
     @property (assign, nonatomic) int pageIndex;
     @property (assign, nonatomic) int pageType;
-    // @property (assign, nonatomic) BOOL isPlaying;
-    @property (assign, nonatomic) NSString *savedText;
+
     @property (assign, nonatomic) CGFloat elapsedTime;
     @property (assign, nonatomic) NSString *musicDurationString;
     @property (assign, nonatomic) CGFloat musicDuration;
@@ -48,6 +47,7 @@
     @property (nonatomic, retain) UITapGestureRecognizer *tapGesture;
     @property (nonatomic, retain) UISwipeGestureRecognizer *swipeGestureLeft;
     @property (nonatomic, retain) UISwipeGestureRecognizer *swipeGestureRight;
+    @property (nonatomic, retain) NSTimer *timer;
     -(instancetype)initWithFrame:(CGRect)arg1;
     -(void)layoutMusicWidget;
 @end

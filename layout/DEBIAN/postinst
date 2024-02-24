@@ -1,3 +1,10 @@
 #!/bin/bash
 
-chown mobile:mobile /Library/Airaw/Widgets/Controls/SUMusicWidget.bundle
+DIR="/Library/Airaw/Widgets/Controls/SUMusicWidget.bundle"
+if [ -d $DIR ]; then
+    chown mobile:mobile /Library/Airaw/Widgets/Controls/SUMusicWidget.bundle
+    echo "SUMusicWidget-chown:(Rootfull)"
+else
+    chown mobile:mobile /var/jb//Library/Airaw/Widgets/Controls/SUMusicWidget.bundle
+    echo "SUMusicWidget-chown:(Rootless)"
+fi

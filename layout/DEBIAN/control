@@ -1,8 +1,8 @@
 Package: com.sugiuta.sumusicwidget
 Name: SUMusicWidget
 Depends: mobilesubstrate, preferenceloader
-Version: 1.0.1
-Architecture: iphoneos-arm
+Version: 1.1
+Architecture: iphoneos-arm64
 Description: An awesome Airaw Widgets extension!
 Maintainer: sugiuta
 Author: sugiuta
